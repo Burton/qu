@@ -2,25 +2,35 @@
 
 [![Build Status](https://travis-ci.org/cfpb/qu.png)](https://travis-ci.org/cfpb/qu)
 
-_qu_ is an **in-progress** data platform created by the [CFPB][] to
-serve their public data sets.
+_qu_ is a platform for publishing data sets via the web, created and maintained by the [CFPB][] to
+serve our public data sets. Installing this software on your own infrastructure will let you: 
 
-The goals of this platform are to:
-* Import data in our
-  [Google-Dataset-inspired format][dataset-inspired]
-* Query data using our
-  [Socrata-Open-Data-API][soda]-inspired API
-* Export data in JSON or CSV format
+* Import data using a 
+  [format][dataset-inspired] inspired by the Google Dataset Publishing Language.
+* Query data using an API, inspired by the 
+  [Socrata Open Data API][soda].
+* Export data in JSON and CSV formats
 
 [CFPB]: http://www.consumerfinance.gov/
 [dataset-inspired]: https://github.com/cfpb/qu/wiki/Dataset-publishing-format
 [soda]: http://dev.socrata.com/consumers/getting-started/
 
+### Performance
+
+...some stuff here about how well it performs...
+
+### Examples
+
+See _qu_ in action:
+
+* Query the CFPB's mortgage data (HMDA) API from our console.
+* CFPB's HMDA analysis and navigation tools are driven by the API.  
+
 ## Getting started
 
 ### Prerequisites
 
-In order to work on _qu_, you need the following languages and tools
+In order to run _qu_, you need the following languages and tools
 installed:
 
 * [Java][]
@@ -82,7 +92,7 @@ MongoDB connection.
 
 All the settings below are shown via environment variables, but they
 can also be set via Java properties. See
-[the documentation for environ][https://github.com/weavejester/environ/blob/master/README.md]
+[the documentation for environ](https://github.com/weavejester/environ/blob/master/README.md)
 for more information on how to use Java properties if you prefer.
 
 #### Server port and threads
